@@ -11,7 +11,7 @@ def image_upload(request):
         form = ImageForm(request.POST, request.FILES)
         if form.is_valid():
             WIDTH = form.cleaned_data.get("width")
-            HEIGHT = form.cleaned_data.get("width")
+            HEIGHT = form.cleaned_data.get("height")
             image_up = form.cleaned_data.get("image_up")
             obj = Image.objects.create(image_up=image_up, )
             ss = str(obj)[-3:-1]
@@ -20,6 +20,7 @@ def image_upload(request):
             new_image.save(f'./userpic/{ss + str(image_up)}')
             obj = Image.objects.update(image_up=ss + str(image_up), )
             print('\n' * 10, obj, '\n' * 10)
+
 
     else:
         form = ImageForm()
