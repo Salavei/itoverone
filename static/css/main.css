@@ -1,0 +1,49 @@
+body {
+    overflow: hidden;
+    background: #663131;
+    }
+.image
+{
+    position: absolute;
+    font-family: Gill Sans, sans-serif;
+    font-size: 100%;
+    font-weight: lighter;
+    left: 20%;
+    top: 50%;
+    color: #fff;
+    z-index: 3000002;
+}
+.input-group{
+    display:flex;
+    flex-direction: row;
+}
+
+form {
+    position: absolute;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 150%;
+    font-weight: lighter;
+    left: 20%;
+    top: 25%;
+    color: #fff;
+    z-index: 3000002;
+}
+
+.button {
+    display: flex;
+    margin: 35%;
+    background-color: #a47777;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    white-space: nowrap;
+    border-radius: .25rem;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #a99999;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}

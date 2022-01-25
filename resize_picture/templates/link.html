@@ -1,13 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>smart image</title>
+    <link href="{% static 'css/link.css' %}" rel="stylesheet">
 </head>
 <body>
     {% csrf_token %}
 
-    <a href="http://127.0.0.1:8000/userpic/{{ link }}">{{link_text}}</a>
-</form>
+    <div> Link to your modified photo: </div>
+    <a class="link" href="http://127.0.0.1:8000/userpic/{{ link }}">{{link_text}}</a>
 </body>
 </html>
